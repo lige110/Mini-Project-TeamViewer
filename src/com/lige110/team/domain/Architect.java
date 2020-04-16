@@ -21,13 +21,13 @@ public class Architect extends Designer{
     }
 
     public String getDetailsForTeam() {
-        return getMemberDetails() + "\t架构师\t" +
+        return getMemberDetails() + "\tArchitect\t" +
                 getBonus() + "\t" + getStock();
     }
 
     @Override
     public String toString() {
-        return getDetails() + "\t架构师\t" + getStatus() + "\t" +
+        return getDetails() + "\tArchitect\t" + getStatus() + "\t" +
                 getBonus() + "\t" + getStock() + "\t" + getEquipment().getDescription();
     }
 }

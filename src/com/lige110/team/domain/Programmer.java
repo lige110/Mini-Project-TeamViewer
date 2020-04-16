@@ -1,5 +1,7 @@
 package com.lige110.team.domain;
 
+import com.lige110.team.service.*;
+
 public class Programmer extends Employee{
 
     private int memberId;
@@ -44,11 +46,11 @@ public class Programmer extends Employee{
     }
 
     public String getDetailsForTeam() {
-        return getMemberDetails() + "\t程序员";
+        return getMemberDetails() + "\tProgrammer";
     }
 
     @Override
     public String toString() {
-        return getDetails() + "\t程序员\t" + status + "\t\t\t" + equipment.getDescription() ;
+        return getDetails() + "\tProgrammer\t" + status + "\t\t\t\t\t" + equipment.getDescription() ;
     }
 }

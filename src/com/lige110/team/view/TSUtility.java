@@ -12,7 +12,6 @@ public class TSUtility {
             c = str.charAt(0);
             if (c != '1' && c != '2' &&
                 c != '3' && c != '4') {
-//                System.out.print("选择错误，请重新输入：");
                 System.out.print("Wrong Selection, please input again: ");
             } else break;
         }
@@ -20,7 +19,6 @@ public class TSUtility {
     }
 
     public static void readReturn() {
-//        System.out.print("按回车键继续...");
         System.out.println("Press enter to continue ....");
         readKeyBoard(100, true);
     }
@@ -33,7 +31,6 @@ public class TSUtility {
                 n = Integer.parseInt(str);
                 break;
             } catch (NumberFormatException e) {
-                System.out.print("数字输入错误，请重新输入：");
                 System.out.print("The input number is wrong, please input again: ");
             }
         }
@@ -48,7 +45,7 @@ public class TSUtility {
             if (c == 'Y' || c == 'N') {
                 break;
             } else {
-                System.out.print("选择错误，请重新输入：");
+                System.out.print("Wrong Selection, please input again ");
             }
         }
         return c;
@@ -65,7 +62,6 @@ public class TSUtility {
             }
 
             if (line.length() < 1 || line.length() > limit) {
-//                System.out.print("输入长度（不大于" + limit + "）错误，请重新输入：");
                 System.out.print("Input length(no larger than" +limit+") wrong, please input again");
                 continue;
             }

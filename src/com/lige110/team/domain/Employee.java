@@ -49,7 +49,7 @@ public class Employee {
     }
 
     protected String getDetails() {
-        return id + "\t" + name + "\t" + age+ "\t" +salary;
+        return id + "\t" + name + " \t" + age+ "\t" +salary;
     }
 
     @Override
